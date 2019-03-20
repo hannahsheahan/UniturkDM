@@ -1,12 +1,19 @@
 ﻿<Properties StartupConfiguration="{431BC64C-071C-DCAA-5FDD-9D91DC24FE4D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DataController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ExperimentConfig.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="9" Column="17" />
-      <File FileName="Assets/Scripts/DataController.cs" Line="130" Column="2" />
-      <File FileName="Assets/Scripts/AnswerButtonPoolControl.cs" Line="50" Column="7" />
-      <File FileName="Assets/Scripts/ExperimentConfig.cs" Line="333" Column="49" />
-      <File FileName="Assets/Scripts/AskQuestionScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="129" Column="45" NotebookId="1" />
+      <File FileName="Assets/Scripts/DataController.cs" Line="237" Column="9" NotebookId="1" />
+      <File FileName="Assets/Scripts/TrialData.cs" Line="50" Column="47" NotebookId="1" />
+      <File FileName="Assets/Scripts/ExperimentConfig.cs" Line="296" Column="29" NotebookId="1" />
     </Files>
+    <FloatingWindows>
+      <FloatingWindow WindowId="1" X="1398" Y="127" Width="1029" Height="1215">
+        <Files>
+          <File FileName="../grandMotherTurkerTest/Assets/Scripts/GameController.cs" Line="109" Column="5" />
+          <File FileName="../grandMotherTurkerTest/Assets/Scripts/DataController.cs" Line="235" Column="75" />
+        </Files>
+      </FloatingWindow>
+    </FloatingWindows>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

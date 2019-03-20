@@ -26,6 +26,7 @@ public class StimulusCueManager : MonoBehaviour
     public Sprite avocadoImage;
     public Sprite icecreamImage;
     public Sprite bananaImage;
+    public Sprite tacoImage;
     public Sprite questionIconImage;
     private string cue;
 
@@ -75,6 +76,10 @@ public class StimulusCueManager : MonoBehaviour
                     case "questionIcon":
                         cueImage.sprite = questionIconImage;
                         break;
+                    case "taco":
+                        cueImage.sprite = tacoImage;
+                        break;
+
                 }
             }
             cueImage.enabled = true;

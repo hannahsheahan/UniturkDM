@@ -90,7 +90,7 @@ public class ExperimentConfig
 
             case "micro_debug":            // ----Mini debugging test experiment-----
                 practiceTrials = 1 + getReadyTrial;
-                nExecutedTrials = 5;                                         // note that this is only used for the micro_debug version
+                nExecutedTrials = 10;                                         // note that this is only used for the micro_debug version
                 totalTrials = nExecutedTrials + setupAndCloseTrials + practiceTrials;        // accounts for the Persistent, StartScreen and Exit 'trials'
                 restFrequency = 5 + restbreakOffset;                            // Take a rest after this many normal trials
                 restbreakDuration = 5.0f;                                       // how long are the imposed rest breaks?
@@ -281,7 +281,9 @@ public class ExperimentConfig
         //        - Randomisation will reorder these and offer repeats if you haven't specified enough unique trials.
 
         // ---- Question ---
-        QuestionData questiondata = new QuestionData(3);  // Note: input specifies number of possible answers (buttons) for this Q
+        QuestionData questiondata;
+        /*
+        questiondata = new QuestionData(3);  // Note: input specifies number of possible answers (buttons) for this Q
 
         questiondata.questionText = "Is this game fun and all things good?";
         questiondata.stimulus = "questionIcon";
@@ -333,6 +335,17 @@ public class ExperimentConfig
         questiondata.answers[4].answerText = ": (";
         questiondata.answers[4].isCorrect = true;
         allQuestions.Add(questiondata);
+        */
+        // ---- Question ---
+        questiondata = new QuestionData(2);
+
+        questiondata.questionText = "How many taco-toasts does a house cost?";
+        questiondata.stimulus = "taco";
+        questiondata.answers[0].answerText = "1";
+        questiondata.answers[1].answerText = "10";
+        questiondata.answers[0].isCorrect = true;
+        allQuestions.Add(questiondata);
+
 
     }
 

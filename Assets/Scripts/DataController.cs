@@ -97,15 +97,15 @@ public class DataController : MonoBehaviour {
         webData.AddField("fileName", fileName);
 
         // v1.0 - local file saving
-        //File.WriteAllText(filePath, dataAsJson);
+        File.WriteAllText(filePath, dataAsJson);
         //-----------
         // v2.0 - local server testing (using MAMP)
         //WWW www = new WWW("http://localhost:8888/fromunity.php", webData);
         //-----------
 
         // v2.1 - web server (Summerfield lab one)
-        WWW www = new WWW("http://185.47.61.11/sandbox/tasks/hannahs/uniturk/lib/php/fromunity.php", webData);
-        StartCoroutine(WaitForRequest(www));
+        //WWW www = new WWW("http://185.47.61.11/sandbox/tasks/hannahs/uniturk/lib/php/fromunity.php", webData);
+        //StartCoroutine(WaitForRequest(www));
     }
 
     // ********************************************************************** //
@@ -231,6 +231,9 @@ public class DataController : MonoBehaviour {
         // Treat these as list elements so that on trials in which we have multiple attempts we save all the data within that trial
         gameData.allTrialData[currentTrialNumber].FLAG_trialTimeout.Add(GameController.control.FLAG_trialTimeout);
         gameData.allTrialData[currentTrialNumber].FLAG_trialError.Add(GameController.control.FLAG_trialError);
+        gameData.allTrialData[currentTrialNumber].FLAG_dataWritingError.Add(GameController.control.FLAG_dataWritingError);
+        gameData.allTrialData[currentTrialNumber].FLAG_fullScreenModeError.Add(GameController.control.FLAG_fullScreenModeError);
+
         gameData.allTrialData[currentTrialNumber].responseTime.Add(GameController.control.responseTime);
         gameData.allTrialData[currentTrialNumber].responseChoice.Add(GameController.control.whichChoiceMade);
         gameData.allTrialData[currentTrialNumber].choiceCorrect.Add(GameController.control.correctChoiceMade);
